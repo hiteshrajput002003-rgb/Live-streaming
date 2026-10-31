@@ -39,7 +39,7 @@ function Room() {
         },
       },
       sharedLinks: [
-        { name: "Copy Link", url: `https://localhost:5173/room/${roomId}` },
+        { name: "Copy Link", url: window.location.href },
       ],
     });
   };
@@ -48,7 +48,6 @@ function Room() {
     <div
       className="myCallContainer"
       ref={myMeeting}
-      style={{ width: "100vw", height: "100vh" }}
     ></div>
   );
 }

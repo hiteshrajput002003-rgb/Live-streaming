@@ -10,7 +10,7 @@ const Home = () => {
     const roomId = input.trim()
 
     if (roomId) {
-      navigate(`/room/${roomId}`)
+      navigate(`/room/${encodeURIComponent(roomId)}`)
     }
   }
 
